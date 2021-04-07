@@ -1,0 +1,8 @@
+body {
+  background: slategray;
+}
+
+#app-container {
+  background: lightgrey;
+  min-height: 1000px;
+}

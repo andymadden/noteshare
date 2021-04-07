@@ -1,0 +1,16 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+frontend-service/node_modules
+frontend-service/.pnp
+frontend-service/.pnp.js
+
+# testing
+frontend-service/coverage
+
+# production
+frontend-service/build
+
+frontend-service/npm-debug.log*
+frontend-service/yarn-debug.log*
+frontend-service/yarn-error.log*
