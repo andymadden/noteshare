@@ -1,11 +1,13 @@
 import React from 'react';
+import Button from 'react-bootstrap/esm/Button';
 import AddNoteModal from './widgets/notes/AddNoteModal';
+import RecentTopicTable from './widgets/topics/RecentTopicTable';
 
 function Home() {
     return (
         <div>
-            <h2>Home</h2>
-            <AddNoteModal />
+            <h3>Recent Topics</h3>
+            <RecentTopicTable />
         </div>
     );
 }
