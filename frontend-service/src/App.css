@@ -6,3 +6,16 @@ body {
   background: lightgrey;
   min-height: 1000px;
 }
+
+.add-table-button {
+  text-align: left;
+}
+
+.button-float-right {
+  float: right;
+  margin-top: 3px;
+}
+
+.topic-block-button {
+  text-align: left;
+}

@@ -1,12 +1,24 @@
 version: "3.3"
 
 services:
+    db:
+        image: postgres
+        environment: 
+            - POSTGRES_DB=postgres
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "5432:5432"
     api-service:
         build: 
             context: ./api-service
         command: "python3 -u main.py"
         ports:
             - "5000:5000"
+        volumes:
+            - ./api-service:/code
+        depends_on:
+            - db
     frontend-service:
         build:
             context: ./frontend-service
@@ -16,3 +28,5 @@ services:
         stdin_open: true
         volumes:
             - ./frontend-service:/app
+        depends_on:
+            - api-service

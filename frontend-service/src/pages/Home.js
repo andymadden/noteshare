@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import AddNoteModal from './widgets/notes/AddNoteModal';
-import RecentTopicTable from './widgets/topics/RecentTopicTable';
+import RecentTopicTable from './widgets/topics/TopicTable';
 
 function Home() {
     return (
