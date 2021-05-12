@@ -27,6 +27,7 @@ function Topics({ updatePage }) {
                         body: JSON.stringify(topic)
                     });
                     topic.id = topics.length > 0 ? topics[topics.length-1].id+1 : 1;
+                    setTopics(topics.concat([topic]));
                 }} updateTopics={fetchTopics}/>
             </Container>
             <TopicTable topics={topics} updatePage={updatePage} />
